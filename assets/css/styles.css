@@ -1,0 +1,30 @@
+body {
+	background-color: #000;
+	font-family: 'Patrick Hand SC', cursive;
+}
+
+.jumbotron {
+	margin-top: 30px;
+	background-color: #fff;
+	padding-top: 15px;
+	padding-bottom: 0px;
+	border: 3px solid #8000ff;
+}
+
+h1 {
+	color: #8000ff;
+	font-size: 4em;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+.purp {
+	color: #8000ff;
+}
+
+.card {
+  	border: 3px solid #8000ff;
+}
+
+.bottom {
+	margin: 2rem 0;
+}

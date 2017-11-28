@@ -1,55 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <title>Rihanna Hangman</title>
+
+  <!-- linking Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC" rel="stylesheet">
+  <!-- linking Bootstrap v3 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  <!-- linking personal style sheet -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+
 </head>
+
 <body>
-	<div class="container">
-		
-		<div class="jumbotron">
-			
-			<h1>Hangman</h1>
-			<p>Guess a letter</p>
+  
+  <div class="container">
+  
+    <div class="jumbotron text-center">
+      <h1>Rihanna Hangman</h1>
+      <h5>Pick any letter to begin.</h5>
+      <h5><span class="purp"><strong>Hint: </strong></span>All words in the word bank are titles to Rihanna songs.</h5>
+      <img class="img-fluid" src="https://www.bet.com/style/beauty/2017/10/16/rihanna-weight-gain-fluctuations-body-shamers/_jcr_content/image.custom1200x600.dimg/__1508185072425/101617-style-Rihanna-Body-Shamers-2.jpg">
+    </div><!-- jumbotron -->
+  
+    <div class="card-deck">
+      <div class="card col-md-3 text-center">
+        <div class="card-body">
+          <h4 class="card-title">Wrong Guesses</h4>
+          <h2 class="card-text"><span id="wrong-guesses"></span></h2>
+        </div><!-- card-body -->
+      </div><!-- card -->
+      <div class="card col-md-3 text-center">
+        <div class="card-body">
+          <h4 class="card-title">Guesses Left</h4>
+          <h2 class="card-text"><span id="guesses-left">9</span></h2>
+        </div><!-- card-body -->
+      </div><!-- card -->
+      <div class="card col-md-6">
+        <div class="card-body">
+          <h4 class="card-title text-center">Score Board</h4>
+          <div class="row text-center">
+            <div class="col-md-6">
+              <h4>Wins</h4>
+              <h3><span id="win-counter">0</span></h3>
+            </div><!-- win-counter -->
+            <div class="col-md-6">
+              <h4>Losses</h4>
+              <h3><span id="loss-counter">0</span></h3>
+            </div><!-- loss counter -->
+          </div><!-- row -->
+        </div><!-- card-body -->
+      </div><!-- card -->
+    </div><!-- card-deck -->
 
-		</div><!--jumbotron-->
+    <div class="card col-md-12 text-center bottom">
+      <div class="card-body">
+        <h4 class="card-title">Word to Guess</h4>
+        <h2 class="card-text" id="word-blanks">_ _ _ _ _ _ _ _ _ </h2>
+      </div><!-- card-body -->
+    </div><!-- card -->
 
-		<div class="panel panel-default">
-			<div class="panel-heading">
-				<h3 class="panel-title">Word to Guess</h3>
-			</div>
-			<div class="panel-body">
-				<h2 id="wordToGuess">_ _ _ _ _ _ _</h2>
-			</div>
-		</div>
+  </div><!-- container -->
 
-		<div class="panel panel-default">
-			<div class="panel-body">
-				Wrong Guesses: <span id="wrongGuesses"></span>
-			</div>
-		</div>
+  <!-- linking Javascript files -->
+  <script src="assets/javascript/game.js"></script>
 
-		<div class="panel panel-default">
-			<div class="panel-body">
-				Guesses Left: <span id="numGuesses"></span>
-			</div>
-		</div>
-
-		<div class="panel panel-default">
-			<div class="panel-body">
-				Win Counter: <span id="winCounter"></span>
-			</div>
-		</div>
-
-		<div class="panel panel-default">
-			<div class="panel-body">
-				Loss Counter: <span id="lossCounter"></span>
-			</div>
-		</div>
-
-	</div><!--container-->
-
-	<script src="assets/javascript/game.js"></script>
 </body>
+
 </html>
