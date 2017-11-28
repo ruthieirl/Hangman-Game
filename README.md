@@ -1,7 +1,7 @@
 -----------------------------------------
 # Hangman - Rihanna Themed
 
-#### HTML CSS Bootstrap JavaScript
+#### HTML * CSS * Bootstrap * JavaScript
 
 
 -----------------------------------------
