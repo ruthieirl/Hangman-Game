@@ -6,7 +6,7 @@ A screenshot of the game is provided below:
 
 ![Imgur](https://i.imgur.com/p40lhAF.png)
 
-For a live look at this code in action, go [here](https://github.com/ruthieirl/Hangman-Game).
+For a live look at this code in action, go [here](https://ruthieirl.github.io/Hangman-Game/).
 
 - - -
 
